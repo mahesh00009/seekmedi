@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import Pricing from "@/components/pricing";
+import Pricing from "@/components/ui/pricing";
 import { creditBenefits, features, testimonials } from "@/lib/data";
 import { ArrowRight, Check, Stethoscope } from "lucide-react";
 import Image from "next/image";

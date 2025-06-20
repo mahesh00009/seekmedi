@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { Card, CardContent } from "./ui/card";
 import { PricingTable } from "@clerk/nextjs";
+import { Card, CardContent } from "./card";
 
 const Pricing = () => {
   return (
