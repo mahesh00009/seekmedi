@@ -29,8 +29,6 @@ export default function Home() {
 
                   <Link href={"/onboarding"}>
 
-
-
                     Get Started <ArrowRight className="ml-2 h-4 w-4" />
 
                   </Link>
@@ -46,11 +44,8 @@ export default function Home() {
                   </Link>
                 </Button>
               </div>
-
-
-
             </div>
-            <div className="relative h-[400px] lg:h-[500px] rounded-xl overflow-hidden">
+            <div className="hidden lg:block relative h-[400px] lg:h-[500px] rounded-xl overflow-hidden">
               <Image src="/banner2.png" alt="Doctor Consultation" fill priority className="object-contain md:pt-14 pr-10 rounded-xl" />
             </div>
           </div>

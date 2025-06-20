@@ -1,9 +1,11 @@
 
-import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs'
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { Button } from './ui/button'
+import { Badge } from './ui/badge'
+import { Card } from './ui/card'
 
 const  Header = () => {
   return (
@@ -17,13 +19,23 @@ const  Header = () => {
             width = {200}
             height = {60}
             className='h-10 w-auto object-contain'
-            
             />
-            
-            
             </Link>
 
             <div className='flex items-center space-x-2'>
+
+            <Link href= "/pricing" >
+              <Badge
+                variant="outline"
+                className="h-10 bg-emerald-900/20 border-emerald-700/30 px-5 py-1"
+              >
+                <span className="text-emerald-400">
+                  Pricing
+                </span>
+              </Badge>
+            </Link>
+
+
                  <SignedOut>
               <SignInButton>
 
