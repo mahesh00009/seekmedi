@@ -1,3 +1,4 @@
+import RevealOnScroll from "@/components/hooks/FramerMotion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,6 +7,7 @@ import { creditBenefits, features, testimonials } from "@/lib/data";
 import { ArrowRight, Check, Stethoscope } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
 
 export default function Home() {
   return (
@@ -55,7 +57,7 @@ export default function Home() {
 
       </section>
 
-
+    <RevealOnScroll>
       <section className="py-20 bg-muted/30">
 
         <div className="container mx-auto px-4">
@@ -86,7 +88,10 @@ export default function Home() {
         </div>
 
       </section>
+      </RevealOnScroll>
 
+          
+        <RevealOnScroll>
 
       <section id="pricing" className="py-20 ">
 
@@ -154,8 +159,12 @@ export default function Home() {
         </div>
 
       </section>
+      </RevealOnScroll>
 
 
+    <RevealOnScroll>
+
+          
       <section className="py-20 bg-muted/30">
 
         <div className="container mx-auto px-4">
@@ -198,8 +207,10 @@ export default function Home() {
         </div>
 
       </section>
+      </RevealOnScroll>
 
 
+    <RevealOnScroll>
 
       <section className="py-20 ">
 
@@ -233,6 +244,7 @@ export default function Home() {
 
 
       </section>
+      </RevealOnScroll>
 
 
 
